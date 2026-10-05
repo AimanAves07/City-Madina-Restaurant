@@ -1,0 +1,6 @@
+{
+  "name": "City Madina Restaurant",
+  "description": "Authentic Indian, Mughlai, Tandoori & Chinese casual dining on Bengaluru–Mysore Road, Channapatna. Features authentic Dum Biryani, Rumali Rolls, Feast Builder, and online takeaway ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
