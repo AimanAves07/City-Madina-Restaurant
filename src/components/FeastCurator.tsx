@@ -25,25 +25,25 @@ export const FeastCurator: React.FC<FeastCuratorProps> = ({ onAddToCart, onOpenC
   const loadCombo = (type: 'highway_quick' | 'sizzler_feast' | 'family_banquet') => {
     if (type === 'highway_quick') {
       setSelectedDishes([
-        MENU_ITEMS.find(d => d.id === 'chicken-shawarma-roll')!,
-        MENU_ITEMS.find(d => d.id === 'chicken-biryani')!,
-        MENU_ITEMS.find(d => d.id === 'fresh-lime-mint-cooler')!
+        MENU_ITEMS.find(d => d.id === 'chicken-shawarma-roll') || MENU_ITEMS[0],
+        MENU_ITEMS.find(d => d.id === 'chicken-biryani') || MENU_ITEMS[3],
+        MENU_ITEMS.find(d => d.id === 'fresh-lime-mint-cooler') || MENU_ITEMS[13]
       ]);
     } else if (type === 'sizzler_feast') {
       setSelectedDishes([
-        MENU_ITEMS.find(d => d.id === 'special-spicy-shawarma')!,
-        MENU_ITEMS.find(d => d.id === 'tandoori-chicken')!,
-        MENU_ITEMS.find(d => d.id === 'garlic-butter-naan')!,
-        MENU_ITEMS.find(d => d.id === 'fresh-lime-mint-cooler')!
+        MENU_ITEMS.find(d => d.id === 'special-spicy-shawarma') || MENU_ITEMS[1],
+        MENU_ITEMS.find(d => d.id === 'tandoori-chicken') || MENU_ITEMS[5],
+        MENU_ITEMS.find(d => d.id === 'garlic-butter-naan') || MENU_ITEMS[11],
+        MENU_ITEMS.find(d => d.id === 'fresh-lime-mint-cooler') || MENU_ITEMS[13]
       ]);
     } else {
       setSelectedDishes([
-        MENU_ITEMS.find(d => d.id === 'chicken-shawarma-roll')!,
-        MENU_ITEMS.find(d => d.id === 'chicken-biryani')!,
-        MENU_ITEMS.find(d => d.id === 'tandoori-chicken')!,
-        MENU_ITEMS.find(d => d.id === 'butter-chicken-mughlai')!,
-        MENU_ITEMS.find(d => d.id === 'rumali-roti-bread')!,
-        MENU_ITEMS.find(d => d.id === 'fresh-lime-mint-cooler')!
+        MENU_ITEMS.find(d => d.id === 'chicken-shawarma-roll') || MENU_ITEMS[0],
+        MENU_ITEMS.find(d => d.id === 'chicken-biryani') || MENU_ITEMS[3],
+        MENU_ITEMS.find(d => d.id === 'tandoori-chicken') || MENU_ITEMS[5],
+        MENU_ITEMS.find(d => d.id === 'butter-chicken-mughlai') || MENU_ITEMS[8],
+        MENU_ITEMS.find(d => d.id === 'rumali-roti-bread') || MENU_ITEMS[10],
+        MENU_ITEMS.find(d => d.id === 'fresh-lime-mint-cooler') || MENU_ITEMS[13]
       ]);
     }
   };
